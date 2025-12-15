@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳門三天兩夜旅遊指南 | 2026年1月10-12日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        header .date {
+            font-size: 1.2em;
+            color: #fff;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            margin: -25px -25px 20px -25px;
+        }
+
+        .day-header h2 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .day-header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .location-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #f6d365;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .location-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .location-item h3 {
+            color: #764ba2;
+            margin-bottom: 8px;
+            font-size: 1.3em;
+        }
+
+        .location-item p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .location-item ul {
+            margin-top: 10px;
+        }
+
+        .location-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .map-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .map-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+        }
+
+        .map-btn::before {
+            content: "📍 ";
+        }
+
+        .meal-section {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #fda085;
+        }
+
+        .meal-section h4 {
+            color: #f5576c;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .meal-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .meal-section li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #fda085;
+        }
+
+        .meal-section li:last-child {
+            border-bottom: none;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .tips-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tips-section h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .tips-section ul {
+            list-style: none;
+        }
+
+        .tips-section li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .tips-section li::before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .time-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .section-divider {
+            text-align: center;
+            padding: 30px 0;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .day-header h2 {
+                font-size: 1.4em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 澳門三天兩夜旅遊指南 🎉</h1>
+            <div class="date">2026年1月10日 - 1月12日</div>
+            <div class="date">✈️ Starlux Airlines | 🏨 康萊德酒店</div>
+        </header>
+
+        <!-- Map Section -->
+        <div class="info-card">
+            <div class="day-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <h2>🗺️ 澳門景點地圖</h2>
+                <div class="subtitle">一次看懂所有景點位置</div>
+            </div>
+
+            <div class="location-item">
+                <img src="macau-map.png" alt="澳門三天旅遊地圖">
+                <p style="margin-top: 15px; color: #666; text-align: center;">
+                    📍 <strong>地圖說明：</strong>左側是澳門半島（歷史城區），右側是氹仔（酒店&官也街）<br>
+                    ✈️ <strong>機場位置：</strong>氹仔東側，搭免費巴士 10-15 分鐘到康萊德酒店
+                </p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="macau-interactive-map.html" class="map-btn" style="font-size: 1.1em; padding: 15px 30px;">
+                        🗺️ 開啟互動式地圖（可點擊導航）
+                    </a>
+                </div>
+            </div>
+
+            <div class="location-item">
+                <h3>🏝️ 區域說明</h3>
+                <p><strong>氹仔區域</strong>（地圖右側，住宿地點）</p>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li>✈️ 澳門國際機場 - 抵達/離開地點（氹仔東側）</li>
+                    <li>🏨 康萊德酒店 - 我們住這裡</li>
+                    <li>🍜 官也街 - 美食街，步行可達</li>
+                    <li>🏠 龍環葡韻 - 5棟薄荷綠葡式建築</li>
+                    <li>⛪ 嘉模聖母堂 - 鵝黃色教堂</li>
+                    <li>🎭 水舞間劇場 - 生日表演（新濠天地）</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>澳門半島</strong>（地圖左側，歷史城區）</p>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li>🏛️ 議事亭前地 - 歷史城區中心</li>
+                    <li>⛪ 玫瑰堂 - 鵝黃色巴洛克教堂</li>
+                    <li>🏛️ 大三巴牌坊 - 最著名地標</li>
+                    <li>💕 戀愛巷 - 粉紅色浪漫小巷</li>
+                    <li>🏰 大炮台 - 山上俯瞰全景</li>
+                    <li>🙏 媽閣廟 - 最古老廟宇</li>
+                    <li>🏠 鄭家大屋 - 歷史建築</li>
+                    <li>🌳 亞婆井前地 - 葡式廣場</li>
+                    <li>🗼 東望洋燈塔 - 最高點</li>
+                </ul>
+            </div>
+
+            <div class="meal-section">
+                <h4>🚶 距離參考 & 交通時間</h4>
+                <ul>
+                    <li><strong>機場 → 康萊德酒店：</strong>免費穿梭巴士約 10-15 分鐘</li>
+                    <li><strong>氹仔區內景點：</strong>步行 5-15 分鐘即可抵達</li>
+                    <li><strong>氹仔 → 澳門半島：</strong>搭免費巴士約 15-20 分鐘</li>
+                    <li><strong>澳門半島景點：</strong>彼此步行 10-20 分鐘</li>
+                    <li><strong>康萊德酒店 → 機場：</strong>免費穿梭巴士約 10-15 分鐘</li>
+                    <li><strong>整體：</strong>澳門很小，景點集中，非常適合步行遊覽！</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Currency Exchange Section -->
+        <div class="info-card">
+            <div class="day-header" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
+                <h2>💰 貨幣兌換完整攻略</h2>
+                <div class="subtitle">詳細說明 • 省錢技巧</div>
+            </div>
+
+            <div class="location-item">
+                <h3>💵 基本資訊</h3>
+                <p><strong>通用貨幣：</strong>澳門幣 (MOP / Pataca) 與港幣 (HKD) 在澳門 1:1 等值流通</p>
+                <p><strong>匯率參考：</strong></p>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li>1 澳門幣 (MOP) ≈ 1 港幣 (HKD) ≈ 4 台幣 (TWD)</li>
+                    <li>1 台幣 (TWD) ≈ 0.25 澳門幣/港幣</li>
+                    <li>實際匯率每日波動，出發前請查詢當日匯率</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3>💳 建議兌換金額</h3>
+                <p><strong>三天兩夜預估：</strong></p>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li><strong>現金需求：</strong>MOP 1,500-2,000（約 TWD 6,000-8,000）</li>
+                    <li><strong>用途分配：</strong>
+                        <ul style="margin-top: 5px;">
+                            <li>餐飲：MOP 1,000-1,200（茶餐廳、小吃為主）</li>
+                            <li>交通：MOP 50-100（備用，主要用免費巴士）</li>
+                            <li>伴手禮、雜支：MOP 300-500</li>
+                            <li>緊急備用：MOP 200-300</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3>🏦 最佳兌換策略</h3>
+                <p><strong>步驟一：出發前在台灣</strong></p>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li>✅ <strong>推薦：</strong>在台灣銀行兌換「港幣」（匯率較好，澳門通用）</li>
+                    <li>✅ 台灣銀行、兆豐銀行匯率相對優惠</li>
+                    <li>✅ 可先上網查詢各銀行即期匯率</li>
+                    <li>❌ <strong>不推薦：</strong>在台灣換澳門幣（額度少、匯率差）</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>步驟二：抵達澳門後（如需補換）</strong></p>
+                <ul style="padding-left: 20px; margin-top: 10px;">
+                    <li>✅ <strong>推薦：</strong>議事亭前地、新馬路一帶找換店（匯率好）</li>
+                    <li>✅ 兩棟樓附近也有多家找換店可比較</li>
+                    <li>⚠️ <strong>注意：</strong>找換店營業時間約 9:00-21:00</li>
+                    <li>❌ <strong>避免：</strong>機場、酒店兌換（匯率最差，可能差 5-10%）</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3>💳 信用卡使用建議</h3>
+                <ul style="padding-left: 20px;">
+                    <li>✅ <strong>適用場所：</strong>連鎖餐廳、商場、便利商店（7-11、OK）</li>
+                    <li>✅ <strong>手續費：</strong>約 1.5%，但匯率通常比現金兌換好</li>
+                    <li>✅ <strong>優點：</strong>不用帶大量現金、即時匯率、消費紀錄清楚</li>
+                    <li>❌ <strong>不適用：</strong>街邊小吃攤、傳統茶餐廳、小型商店</li>
+                    <li>💡 <strong>建議：</strong>高額消費用信用卡，小吃用現金</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3>📱 行動支付</h3>
+                <ul style="padding-left: 20px;">
+                    <li>⚠️ 支付寶、微信支付在澳門部分店家可用</li>
+                    <li>❌ 台灣的 LINE Pay、街口支付不通用</li>
+                    <li>❌ Apple Pay、Google Pay 接受度不高</li>
+                    <li>💡 <strong>結論：</strong>不要依賴行動支付，帶現金最保險</li>
+                </ul>
+            </div>
+
+            <div class="meal-section">
+                <h4>💡 省錢小撇步</h4>
+                <ul>
+                    <li><strong>港幣在澳門通用：</strong>直接使用港幣付款，店家找零會給澳門幣</li>
+                    <li><strong>澳門幣帶回台灣難兌換：</strong>行程最後幾天盡量用完</li>
+                    <li><strong>小額紙鈔很重要：</strong>換錢時請店家給 20、50、100 面額（方便買小吃）</li>
+                    <li><strong>記帳習慣：</strong>用手機記錄每筆消費，避免超支</li>
+                    <li><strong>緊急備用金：</strong>保留 200-300 MOP 以防萬一</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                💰 總結建議 💰<br>
+                在台灣換 TWD 6,000-8,000 的港幣<br>
+                高額消費刷卡 + 小吃用現金 = 最省錢！
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips-section">
+            <h3>💡 實用小提示</h3>
+            <ul>
+                <li><strong>交通</strong>：充分利用康萊德酒店免費穿梭巴士，往返關閘、外港碼頭、各大景點</li>
+                <li><strong>網路</strong>：可購買澳門電話卡（約 MOP 50-100）或使用台灣電信國際漫遊</li>
+                <li><strong>省錢秘訣</strong>：歷史古蹟都免費參觀，多吃街頭小吃和茶餐廳，避開賭場區高價餐廳</li>
+                <li><strong>步行</strong>：澳門半島景點集中，步行即可遊覽大部分景點，建議穿舒適鞋子</li>
+                <li><strong>拍照時機</strong>：清晨和傍晚光線最美，避開正午烈日；大三巴建議早上 9 點前拍照人少</li>
+                <li><strong>天氣</strong>：1月澳門約15-20°C，早晚溫差大，建議攜帶薄外套和圍巾</li>
+                <li><strong>語言</strong>：粵語、普通話通用，部分店家會講英文，台灣人溝通無障礙</li>
+                <li><strong>營業時間</strong>：茶餐廳多為 7:00-22:00，景點約 9:00-18:00，找換店 9:00-21:00</li>
+            </ul>
+        </div>
+
+        <div class="section-divider">
+            ⬇️ 以下是詳細行程規劃 ⬇️
+        </div>
+
+        <!-- Day 1 -->
+        <div class="info-card">
+            <div class="day-header">
+                <h2>Day 1 - 1月10日 (週五)</h2>
+                <div class="subtitle">抵達澳門 • 氹仔文化之旅</div>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">10:05</span>抵達澳門國際機場</h3>
+                <p>航班：JX201 (Starlux Airlines)</p>
+                <p>💡 搭乘酒店免費穿梭巴士前往康萊德酒店</p>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">12:00</span>康萊德酒店 Check-in</h3>
+                <p>稍作休息，準備開始探索澳門！</p>
+            </div>
+
+            <div class="meal-section">
+                <h4>🍜 午餐時間</h4>
+                <ul>
+                    <li><strong>誠昌飯店</strong> - 水蟹粥 MOP 60-80</li>
+                    <li><strong>大利來豬扒包</strong> - 招牌豬扒包 MOP 42</li>
+                    <li><strong>達榮魚翅湯麵</strong> - 平價美味 MOP 40-60</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">14:00</span>官也街</h3>
+                <p>澳門最著名的美食街，充滿葡式風情</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=官也街,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">15:30</span>龍環葡韻</h3>
+                <p>五棟薄荷綠色的葡式建築，超美拍照景點！</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=龍環葡韻,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">16:30</span>嘉模聖母堂</h3>
+                <p>氹仔最古老的教堂，鵝黃色外牆非常迷人</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=嘉模聖母堂,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="meal-section">
+                <h4>🍰 下午茶時間</h4>
+                <ul>
+                    <li><strong>莫義記</strong> - 必吃榴槤雪糕</li>
+                    <li><strong>晃記餅家</strong> - 傳統澳門手信</li>
+                </ul>
+            </div>
+
+            <div class="meal-section">
+                <h4>🍽️ 晚餐推薦</h4>
+                <ul>
+                    <li><strong>木偶葡國餐廳</strong> - 平價葡國菜 MOP 100-150/人</li>
+                    <li><strong>南屏雅敘茶餐廳</strong> - 經典茶餐廳 MOP 60-80</li>
+                    <li><strong>世記咖啡</strong> - 豬扒包、奶茶 MOP 50-70</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="info-card">
+            <div class="day-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                <h2>Day 2 - 1月11日 (週六)</h2>
+                <div class="subtitle">🎂 生日快樂！歷史城區 • 水舞間表演</div>
+            </div>
+
+            <div class="meal-section">
+                <h4>☕ 早餐</h4>
+                <ul>
+                    <li><strong>南屏雅敘茶餐廳</strong> - 豬扒包、奶茶 MOP 40-60</li>
+                    <li><strong>檸檬車露</strong> - 芝士蛋糕配咖啡 MOP 50-70</li>
+                    <li><strong>皇冠小館</strong> - 豬扒蛋麵、鴛鴦 MOP 45-65</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">09:30</span>議事亭前地</h3>
+                <p>澳門歷史城區的心臟地帶，葡式碎石路美麗動人</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=議事亭前地,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">10:00</span>玫瑰堂</h3>
+                <p>巴洛克風格的天主教堂，鵝黃色外觀超吸睛</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=玫瑰堂,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">10:45</span>大三巴牌坊</h3>
+                <p>澳門最著名地標！聖保祿教堂遺址</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=大三巴牌坊,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">11:30</span>戀愛巷</h3>
+                <p>浪漫粉色小巷，情侶必拍！</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=戀愛巷,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">12:00</span>大炮台</h3>
+                <p>俯瞰澳門全景的最佳地點</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=大炮台,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="meal-section">
+                <h4>🍜 午餐推薦</h4>
+                <ul>
+                    <li><strong>黃枝記粥麵</strong> - 竹昇麵、鮮蝦雲吞 MOP 45-70</li>
+                    <li><strong>義順燉奶</strong> - 雙皮燉奶 MOP 28</li>
+                    <li><strong>恆友魚蛋</strong> - 咖哩魚蛋 MOP 25-35</li>
+                    <li><strong>盛記白粥</strong> - 白粥配油條、炸兩 MOP 40-60</li>
+                    <li><strong>檸檬車露</strong> - 芝士蛋糕、意粉 MOP 50-80</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">14:00</span>媽閣廟</h3>
+                <p>澳門最古老的廟宇，世界文化遺產</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=媽閣廟,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">15:00</span>鄭家大屋</h3>
+                <p>中國近代思想家鄭觀應的故居</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=鄭家大屋,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">15:45</span>亞婆井前地</h3>
+                <p>葡式風情濃厚的寧靜廣場</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=亞婆井前地,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="highlight">
+                🎭 17:00 水舞間表演 🎭<br>
+                新濠天地水舞間劇院 | Gallery 座位<br>
+                訂單編號：GCJ245381
+            </div>
+
+            <div class="meal-section">
+                <h4>🎂 生日晚餐</h4>
+                <ul>
+                    <li><strong>龍華茶樓</strong> - 傳統粵式茶樓 MOP 80-120/人</li>
+                    <li><strong>添發碗仔翅</strong> - 碗仔翅、豬腳薑 MOP 60-90</li>
+                    <li><strong>祥記麵家</strong> - 竹昇麵、鮮蝦雲吞 MOP 50-80</li>
+                    <li><strong>新鴻發茶餐廳</strong> - 豬扒包、奶茶 MOP 60-80</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="info-card">
+            <div class="day-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <h2>Day 3 - 1月12日 (週日)</h2>
+                <div class="subtitle">最後巡禮 • 返程</div>
+            </div>
+
+            <div class="meal-section">
+                <h4>☕ 早餐</h4>
+                <ul>
+                    <li><strong>勝利茶餐室</strong> - 豬扒包、蛋撻 MOP 40-60</li>
+                    <li><strong>陳光記飯店</strong> - 燒味飯、雲吞麵 MOP 45-65</li>
+                    <li><strong>瑪嘉烈蛋撻店</strong> - 葡撻配咖啡 MOP 30-50</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">10:00</span>Check-out & 寄放行李</h3>
+                <p>康萊德酒店可免費寄放行李至下午</p>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">10:30</span>東望洋燈塔</h3>
+                <p>澳門最高點，可欣賞360度全景</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=東望洋燈塔,澳門" target="_blank" class="map-btn">開啟導航</a>
+            </div>
+
+            <div class="meal-section">
+                <h4>🍜 午餐 - 最後一餐</h4>
+                <ul>
+                    <li><strong>檸檬車露</strong> - 芝士蛋糕、意粉 MOP 60-90</li>
+                    <li><strong>潘榮記</strong> - 金錢餅、減蛋餅 MOP 30-50</li>
+                    <li><strong>李康記豆腐花</strong> - 豆腐花、豆漿 MOP 15-25</li>
+                    <li><strong>明記牛雜</strong> - 牛雜、牛腩 MOP 40-60</li>
+                    <li><strong>陳光記燒臘飯店</strong> - 燒味雙拼飯 MOP 50-70</li>
+                </ul>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">18:00</span>回酒店取行李</h3>
+                <p>搭乘免費穿梭巴士前往機場</p>
+            </div>
+
+            <div class="location-item">
+                <h3><span class="time-tag">20:35</span>澳門國際機場 - 返程</h3>
+                <p>航班：JX206 (Starlux Airlines)</p>
+                <p>目的地：台北桃園機場 (22:25 抵達)</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>🎊 祝旅途愉快！生日快樂！🎊</h3>
+            <p>Made with ❤️ for your Macau Adventure</p>
+        </div>
+    </div>
+</body>
+</html>
