@@ -159,6 +159,103 @@
             border-bottom: none;
         }
 
+        /* 地圖放大功能 */
+        .map-image {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .map-image:hover {
+            opacity: 0.9;
+        }
+
+        .map-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .map-modal-content {
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            width: 95%;
+            max-width: 1400px;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-modal-content img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .map-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .map-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .map-hint {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @media (max-width: 768px) {
+            .map-close {
+                top: 10px;
+                right: 10px;
+                font-size: 30px;
+                width: 40px;
+                height: 40px;
+            }
+            
+            .map-modal-content {
+                padding: 10px;
+                height: 95%;
+            }
+        }
+
         .highlight {
             background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
             color: white;
@@ -256,7 +353,8 @@
             </div>
 
             <div class="location-item">
-                <img src="macau-map.png" alt="澳門三天旅遊地圖">
+                <img src="macau-map.png" alt="澳門三天旅遊地圖" class="map-image" onclick="openMapModal()">
+                <p class="map-hint">👆 點擊地圖可放大查看</p>
                 <p style="margin-top: 15px; color: #666; text-align: center;">
                     📍 <strong>地圖說明：</strong>左側是澳門半島（歷史城區），右側是氹仔（酒店&官也街）<br>
                     ✈️ <strong>機場位置：</strong>氹仔東側，搭免費巴士 10-15 分鐘到巴黎人酒店
@@ -628,5 +726,34 @@
             <p>Made with ❤️ for your Macau Adventure</p>
         </div>
     </div>
+
+    <!-- 地圖放大彈出視窗 -->
+    <div id="mapModal" class="map-modal" onclick="closeMapModal()">
+        <span class="map-close" onclick="closeMapModal()">&times;</span>
+        <div class="map-modal-content">
+            <img src="macau-map.png" alt="澳門旅遊地圖放大版">
+        </div>
+    </div>
+
+    <script>
+        // 開啟地圖放大視窗
+        function openMapModal() {
+            document.getElementById('mapModal').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // 防止背景滾動
+        }
+
+        // 關閉地圖放大視窗
+        function closeMapModal() {
+            document.getElementById('mapModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // 恢復滾動
+        }
+
+        // 按 ESC 鍵關閉
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeMapModal();
+            }
+        });
+    </script>
 </body>
 </html>
