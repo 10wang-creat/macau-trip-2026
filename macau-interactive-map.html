@@ -1,498 +1,192 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>澳門景點互動地圖 | 2026年1月10-12日</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+# 澳門旅遊行程更新指引
 
-        body {
-            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
-        }
+## 📋 更新摘要
 
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+**主要變更：**
+1. Day 1：官也街行程 → 巴黎人酒店設施體驗
+2. Day 3：東望洋燈塔 → 官也街買伴手禮
+3. 新增：酒店設施、生日禮遇、teamLab 資訊
 
-        header {
-            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-            padding: 30px 20px;
-            text-align: center;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
+---
 
-        header h1 {
-            font-size: 2em;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 10px;
-        }
+## 📅 Day 1 (1月10日) - 巴黎人酒店設施巡禮 🗼
 
-        .map-container {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
-        }
+### 10:05 抵達澳門國際機場
+- 航班：JX201 (Starlux Airlines)
+- 搭乘酒店免費穿梭巴士前往巴黎人酒店
 
-        #map {
-            height: 600px;
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
+### 12:00 巴黎人酒店 Check-in
+辦理入住，領取房卡和生日禮遇！
 
-        .controls {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
-        }
+**🎂 生日禮遇（需在入住時告知）：**
+- 生日蛋糕：半磅蛋糕送至房間（需告知配送時間）
+- 適用日期：生日前後三天內入住都可享用  
+- 生日賓客：WU, LI-TSENG (1969/1/6)
+- 建議：可安排晚餐後送到房間享用 🎉
 
-        .controls h3 {
-            color: #764ba2;
-            margin-bottom: 15px;
-        }
+### 13:00 午餐
+**推薦：**
+- 巴黎人購物中心內餐廳
+- 金光大道附近餐廳（步行可達）
 
-        .day-buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-        }
+### 14:30 🗼 巴黎鐵塔7樓觀景台（免費）
+- 地點：巴黎人購物中心5樓，550號，巴黎鐵塔紀念品商店進入
+- 免費入場：憑房卡免費（7樓觀景台）
+- 開放時間：12:00-23:00（最晚入場 22:15）
+- 景觀：路氹金光大道和澳門美景盡收眼底
 
-        .btn {
-            padding: 12px 24px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: bold;
-            transition: all 0.3s;
-            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
-        }
+**💰 升級選項（可選）：**
+- 37樓觀景台：成人 MOP 98/人
+- 1.2米以下兒童免費（每位成人最多可攜帶兩名兒童）
 
-        .btn-day1 {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-        }
+### 16:30 🏊 酒店泳池 & 按摩池
+- 開放時間：08:00-20:00
+- 免費使用（需憑房卡）
+- 💡 需自帶泳衣
+- 在泳池放鬆，享受度假氛圍
 
-        .btn-day2 {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            color: white;
-        }
+### 18:15 🌟 巴黎鐵塔燈光秀
+- 時間：18:15-24:00
+- 頻率：每15分鐘一次
+- 地點：在酒店外欣賞精彩的鐵塔燈光表演
+- 免費觀賞
 
-        .btn-day3 {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            color: white;
-        }
+### 19:00 🍽️ 生日晚餐
+**推薦：**
+- 酒店內餐廳 - 慶祝生日的特別晚餐
+- 金光大道餐廳 - 多種美食選擇
+- 回房享用生日蛋糕 🎂
 
-        .btn-all {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-            color: white;
-        }
+### 選項：🎨 teamLab 超自然空間
+- 地點：金光會展
+- 時間：11:00-19:00（最晚入場 18:15）
+- 優惠：憑房卡7折購票（最多4張）
 
-        .btn-clear {
-            background: #ccc;
-            color: #333;
-        }
+**票價：**
+| 類型 | 原價 | 7折優惠 |
+|------|------|---------|
+| 成人全日門票 | MOP 288 | MOP 202 |
+| 兒童票（3-12歲）| MOP 208 | MOP 146 |
 
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
+💡 如果時間充裕，可以安排在下午或晚上前往
 
-        .legend {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
+---
 
-        .legend h3 {
-            color: #764ba2;
-            margin-bottom: 15px;
-        }
+## 📅 Day 2 (1月11日) - 保持原有行程
 
-        .legend-item {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-            padding: 8px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
+### 早上：龍環葡韻 + 嘉模聖母堂
+### 全天：歷史城區
+- 議事亭前地
+- 玫瑰堂
+- 大三巴牌坊
+- 戀愛巷  
+- 大炮台
+- 媽閣廟
+- 鄭家大屋
+- 亞婆井前地
 
-        .legend-icon {
-            font-size: 1.5em;
-            margin-right: 10px;
-            min-width: 30px;
-        }
+### 17:00 水舞間表演
+- 新濠天地水舞間劇院
+- Gallery 座位
+- 訂單編號：GCJ245381
 
-        .back-link {
-            display: inline-block;
-            background: white;
-            color: #764ba2;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-top: 20px;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
+---
 
-        .back-link:hover {
-            background: #764ba2;
-            color: white;
-            transform: scale(1.05);
-        }
+## 📅 Day 3 (1月12日) - 官也街買伴手禮 + 返程
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-            
-            #map {
-                height: 400px;
-            }
-            
-            .day-buttons {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🗺️ 澳門景點互動地圖</h1>
-            <p style="color: white; margin-top: 10px;">點擊按鈕查看每天行程路線</p>
-        </header>
+### 早餐推薦
+- 勝利茶餐室 - 豬扒包、蛋撻 MOP 40-60
+- 陳光記飯店 - 燒味飯、雲吞麵 MOP 45-65
+- 瑪嘉烈蛋撻店 - 葡撻配咖啡 MOP 30-50
 
-        <div class="controls">
-            <h3>📅 選擇行程日期</h3>
-            <div class="day-buttons">
-                <button class="btn btn-day1" onclick="showDay(1)">Day 1 - 氹仔文化之旅</button>
-                <button class="btn btn-day2" onclick="showDay(2)">Day 2 - 生日 + 歷史城區</button>
-                <button class="btn btn-day3" onclick="showDay(3)">Day 3 - 最後巡禮</button>
-                <button class="btn btn-all" onclick="showAll()">顯示全部景點</button>
-                <button class="btn btn-clear" onclick="clearMap()">清除標記</button>
-            </div>
-        </div>
+### 10:00 Check-out & 寄放行李
+巴黎人酒店可免費寄放行李至下午
 
-        <div class="map-container">
-            <div id="map"></div>
-        </div>
+### 10:30 官也街 - 買伴手禮！🎁
+澳門最著名的美食街，充滿葡式風情
 
-        <div class="legend">
-            <h3>🏷️ 圖示說明</h3>
-            <div class="legend-item">
-                <span class="legend-icon">✈️</span>
-                <span><strong>澳門國際機場</strong> - 抵達/離開地點</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-icon">🏨</span>
-                <span><strong>巴黎人酒店</strong> - 住宿地點</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-icon">🏛️</span>
-                <span><strong>歷史古蹟</strong> - 大三巴、媽閣廟等</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-icon">⛪</span>
-                <span><strong>教堂</strong> - 玫瑰堂、嘉模聖母堂</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-icon">🎭</span>
-                <span><strong>水舞間劇場</strong> - 生日表演</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-icon">🍜</span>
-                <span><strong>美食區</strong> - 官也街等</span>
-            </div>
-        </div>
+**🛍️ 伴手禮推薦：**
+- **晃記餅家** - 傳統澳門手信（杏仁餅、鳳凰卷）
+- **鉅記餅家** - 豬肉乾、花生糖
+- **咀香園** - 杏仁餅、蛋卷
+- **英記餅家** - 各式糕餅
 
-        <div style="text-align: center;">
-            <a href="index.html" class="back-link">← 返回旅遊指南</a>
-        </div>
-    </div>
+**🍜 美食推薦：**
+- **誠昌飯店** - 水蟹粥 MOP 60-80
+- **大利來豬扒包** - 招牌豬扒包 MOP 42
+- **莫義記** - 必吃榴槤雪糕
+- **達榮魚翅湯麵** - 平價美味 MOP 40-60
 
-    <script>
-        let map;
-        let markers = [];
-        let polylines = [];
+### 12:00 午餐 - 官也街美食
+在官也街享用最後一餐澳門美食
 
-        // 所有景點資料
-        const locations = {
-            airport: {
-                name: '澳門國際機場',
-                position: { lat: 22.1496, lng: 113.5918 },
-                icon: '✈️',
-                day: 0,
-                type: 'airport'
-            },
-            conrad: {
-                name: '巴黎人酒店',
-                position: { lat: 22.1435, lng: 113.5584 },
-                icon: '🏨',
-                day: 0,
-                type: 'hotel'
-            },
-            taipa_village: {
-                name: '官也街',
-                position: { lat: 22.1538, lng: 113.5588 },
-                icon: '🍜',
-                day: 1,
-                type: 'food'
-            },
-            casas: {
-                name: '龍環葡韻',
-                position: { lat: 22.1525, lng: 113.5567 },
-                icon: '🏠',
-                day: 1,
-                type: 'attraction'
-            },
-            carmel_church: {
-                name: '嘉模聖母堂',
-                position: { lat: 22.1545, lng: 113.5594 },
-                icon: '⛪',
-                day: 1,
-                type: 'church'
-            },
-            house_of_dancing_water: {
-                name: '水舞間劇場',
-                position: { lat: 22.1467, lng: 113.5593 },
-                icon: '🎭',
-                day: 2,
-                type: 'show'
-            },
-            senado: {
-                name: '議事亭前地',
-                position: { lat: 22.1901, lng: 113.5397 },
-                icon: '🏛️',
-                day: 2,
-                type: 'attraction'
-            },
-            st_dominic: {
-                name: '玫瑰堂',
-                position: { lat: 22.1910, lng: 113.5404 },
-                icon: '⛪',
-                day: 2,
-                type: 'church'
-            },
-            ruins_st_paul: {
-                name: '大三巴牌坊',
-                position: { lat: 22.1973, lng: 113.5413 },
-                icon: '🏛️',
-                day: 2,
-                type: 'attraction'
-            },
-            love_lane: {
-                name: '戀愛巷',
-                position: { lat: 22.1977, lng: 113.5408 },
-                icon: '💕',
-                day: 2,
-                type: 'attraction'
-            },
-            mount_fortress: {
-                name: '大炮台',
-                position: { lat: 22.1978, lng: 113.5421 },
-                icon: '🏰',
-                day: 2,
-                type: 'attraction'
-            },
-            ama_temple: {
-                name: '媽閣廟',
-                position: { lat: 22.1876, lng: 113.5335 },
-                icon: '🙏',
-                day: 2,
-                type: 'temple'
-            },
-            mandarin_house: {
-                name: '鄭家大屋',
-                position: { lat: 22.1877, lng: 113.5363 },
-                icon: '🏠',
-                day: 2,
-                type: 'attraction'
-            },
-            lilau_square: {
-                name: '亞婆井前地',
-                position: { lat: 22.1873, lng: 113.5368 },
-                icon: '🌳',
-                day: 2,
-                type: 'attraction'
-            },
-            guia_fortress: {
-                name: '東望洋燈塔',
-                position: { lat: 22.1961, lng: 113.5497 },
-                icon: '🗼',
-                day: 3,
-                type: 'attraction'
-            }
-        };
+### 選項：東望洋燈塔（如時間充裕）
+澳門最高點，可欣賞360度全景
+💡 視時間和購物狀況決定是否前往
 
-        // 初始化地圖
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 13,
-                center: { lat: 22.1700, lng: 113.5500 },
-                styles: [
-                    {
-                        featureType: 'poi',
-                        elementType: 'labels',
-                        stylers: [{ visibility: 'off' }]
-                    }
-                ]
-            });
-        }
+### 18:00 回酒店取行李
+搭乘免費穿梭巴士前往機場
 
-        // 清除所有標記和路線
-        function clearMap() {
-            markers.forEach(marker => marker.setMap(null));
-            polylines.forEach(polyline => polyline.setMap(null));
-            markers = [];
-            polylines = [];
-        }
+### 20:35 澳門國際機場 - 返程
+- 航班：JX206 (Starlux Airlines)  
+- 目的地：台北桃園機場（22:25 抵達）
 
-        // 創建標記
-        function createMarker(location, showLabel = true) {
-            const marker = new google.maps.Marker({
-                position: location.position,
-                map: map,
-                title: location.name,
-                label: {
-                    text: location.icon,
-                    fontSize: '24px'
-                },
-                animation: google.maps.Animation.DROP
-            });
+---
 
-            const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="padding: 10px; font-family: 'Microsoft JhengHei', sans-serif;">
-                        <h3 style="margin: 0 0 10px 0; color: #764ba2;">${location.icon} ${location.name}</h3>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=${location.position.lat},${location.position.lng}" 
-                           target="_blank" 
-                           style="color: #667eea; text-decoration: none; font-weight: bold;">
-                           📍 開啟導航
-                        </a>
-                    </div>
-                `
-            });
+## 🏨 巴黎人酒店設施完整清單
 
-            marker.addListener('click', () => {
-                infoWindow.open(map, marker);
-            });
+### 免費設施（憑房卡）
+✅ **7樓觀景台** - 12:00-23:00
+✅ **泳池 & 按摩池** - 08:00-20:00（需自帶泳衣）
+✅ **健身中心** - 24小時開放
+✅ **免費 Wi-Fi**
+✅ **免費穿梭巴士** - 往返澳門主要口岸
+✅ **巴黎鐵塔燈光秀** - 18:15-24:00（每15分鐘）
 
-            markers.push(marker);
-            return marker;
-        }
+### 生日禮遇
+🎂 **半磅生日蛋糕** - 免費送至房間
+📅 **適用日期** - 生日前後三天內入住
 
-        // 繪製路線
-        function drawRoute(locations, color) {
-            const path = locations.map(loc => loc.position);
-            const polyline = new google.maps.Polyline({
-                path: path,
-                geodesic: true,
-                strokeColor: color,
-                strokeOpacity: 0.8,
-                strokeWeight: 3,
-                map: map
-            });
-            polylines.push(polyline);
-        }
+### 優惠折扣
+🎨 **teamLab門票7折** - 憑房卡購買（最多4張）
 
-        // 顯示第一天行程
-        function showDay(day) {
-            clearMap();
-            
-            if (day === 1) {
-                // Day 1: 機場 → 康萊德 → 氹仔景點
-                const day1Locations = [
-                    locations.airport,
-                    locations.conrad,
-                    locations.taipa_village,
-                    locations.casas,
-                    locations.carmel_church
-                ];
-                
-                day1Locations.forEach(loc => createMarker(loc));
-                drawRoute(day1Locations, '#f5576c');
-                
-                map.setCenter({ lat: 22.1500, lng: 113.5580 });
-                map.setZoom(14);
-                
-            } else if (day === 2) {
-                // Day 2: 康萊德 → 澳門半島歷史城區 → 水舞間
-                const day2Locations = [
-                    locations.conrad,
-                    locations.senado,
-                    locations.st_dominic,
-                    locations.ruins_st_paul,
-                    locations.love_lane,
-                    locations.mount_fortress,
-                    locations.ama_temple,
-                    locations.mandarin_house,
-                    locations.lilau_square,
-                    locations.house_of_dancing_water
-                ];
-                
-                day2Locations.forEach(loc => createMarker(loc));
-                drawRoute(day2Locations, '#fee140');
-                
-                map.setCenter({ lat: 22.1850, lng: 113.5400 });
-                map.setZoom(13);
-                
-            } else if (day === 3) {
-                // Day 3: 康萊德 → 東望洋燈塔 → 機場
-                const day3Locations = [
-                    locations.conrad,
-                    locations.guia_fortress,
-                    locations.airport
-                ];
-                
-                day3Locations.forEach(loc => createMarker(loc));
-                drawRoute(day3Locations, '#00f2fe');
-                
-                map.setCenter({ lat: 22.1700, lng: 113.5500 });
-                map.setZoom(13);
-            }
-        }
+### 付費選項
+💰 **37樓觀景台** - MOP 98/人（1.2米以下兒童免費）
+🎨 **teamLab 超自然空間** - 成人 MOP 202（7折價）
 
-        // 顯示所有景點
-        function showAll() {
-            clearMap();
-            Object.values(locations).forEach(loc => createMarker(loc));
-            
-            // 調整地圖視角以顯示所有標記
-            const bounds = new google.maps.LatLngBounds();
-            Object.values(locations).forEach(loc => {
-                bounds.extend(loc.position);
-            });
-            map.fitBounds(bounds);
-        }
+---
 
-        // 頁面載入時初始化
-        window.onload = function() {
-            initMap();
-            showAll(); // 預設顯示所有景點
-        };
-    </script>
+## 💡 旅遊建議
 
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDgU6maj9qywhJ1SsVnsRZe31JMgcLbcg&callback=initMap" async defer></script>
-</body>
-</html>
+### Day 1 重點
+- 充分利用酒店免費設施
+- 體驗巴黎鐵塔觀景台和燈光秀
+- 在酒店內慶祝生日，享用蛋糕
+- 放鬆休息，為明天行程儲備體力
+
+### Day 3 重點  
+- 早上前往官也街買伴手禮
+- 預留充足時間購物
+- 避免趕行程，輕鬆返程
+
+### 預算參考
+| 項目 | 預估費用 |
+|------|----------|
+| Day 1 餐飲 | MOP 300-400 |
+| Day 3 伴手禮 | MOP 500-1000 |
+| teamLab（選購）| MOP 400-600（2人）|
+| 37樓觀景台（選購）| MOP 200（2人）|
+
+---
+
+## 🎯 重要提醒
+
+1. **生日蛋糕配送時間** - Check-in 時告知酒店希望的配送時間
+2. **泳衣** - 記得攜帶泳衣使用泳池
+3. **房卡** - 善用房卡免費設施和7折優惠
+4. **伴手禮** - Day 3 早上購買，避免提早購買需要攜帶
+5. **行李寄放** - Check-out 後可免費寄放至下午
+
+---
+
+## 🎊 祝你們旅途愉快！生日快樂！ 🎂✨
