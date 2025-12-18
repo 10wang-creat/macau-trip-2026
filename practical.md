@@ -9,6 +9,53 @@ permalink: /practical
 </div>
 
 <div class="content-section">
+<h2>💰 貨幣與匯率</h2>
+
+<div class="highlight-box">
+<h3>💵 澳門使用貨幣</h3>
+<ul>
+<li>🪙 <strong>澳門幣（MOP）</strong>- 官方貨幣</li>
+<li>🪙 <strong>港幣（HKD）</strong>- 通用，幾乎 1:1</li>
+</ul>
+
+<p><strong>匯率參考：</strong></p>
+<ul>
+<li>1 HKD ≈ 4.1 TWD</li>
+<li>1 MOP ≈ 4.0 TWD</li>
+<li>1 HKD ≈ 1.03 MOP（幾乎等值）</li>
+</ul>
+</div>
+
+<div class="info-card">
+<h3>🏦 換匯方式建議</h3>
+
+<p><strong>✅ 最推薦：台灣先換好港幣</strong></p>
+<ul>
+<li>🏦 台灣的銀行換港幣匯率較好</li>
+<li>💡 建議換 HKD 2,000-3,000（約 TWD 8,000-12,000）</li>
+<li>📍 各大銀行臨櫃或線上結匯</li>
+</ul>
+
+<p><strong>⭕ 其他方式：</strong></p>
+<ul>
+<li>🏧 <strong>澳門 ATM</strong> - 可用台灣金融卡提款，但有手續費</li>
+<li>🏪 <strong>澳門換錢所</strong> - 機場、賭場內都有，匯率普通</li>
+<li>💳 <strong>刷卡</strong> - 大部分商店可用，但小店街攤只收現金</li>
+</ul>
+</div>
+
+<div class="info-card">
+<h3>💡 用錢小提醒</h3>
+<ul>
+<li>✅ <strong>港幣在澳門通用</strong>，不用特別換澳門幣</li>
+<li>✅ 賭場、酒店、大商店可刷卡</li>
+<li>⚠️ 街邊小吃、茶餐廳、計程車<strong>只收現金</strong></li>
+<li>💡 找零可能會收到澳門幣（帶回台灣較難換回）</li>
+</ul>
+</div>
+</div>
+
+<div class="content-section">
 <h2>🛂 入境澳門（不需台胞證！）</h2>
 
 <div class="highlight-box">
@@ -81,28 +128,6 @@ permalink: /practical
 <li>機場 → 巴黎人酒店：免費巴士 10-15 分鐘</li>
 <li>氹仔 → 澳門半島：免費巴士 15-20 分鐘</li>
 <li>澳門半島景點：步行 10-20 分鐘</li>
-</ul>
-</div>
-</div>
-
-<div class="content-section">
-<h2>💰 貨幣與匯率</h2>
-
-<div class="info-card">
-<p><strong>澳門使用貨幣：澳門幣（MOP）</strong></p>
-
-<p><strong>匯率參考：</strong></p>
-<ul>
-<li>1 MOP ≈ 4 TWD</li>
-<li>1 HKD ≈ 1.03 MOP（幾乎等值）</li>
-</ul>
-
-<p><strong>建議：</strong></p>
-<ul>
-<li>✅ 港幣和澳門幣通用</li>
-<li>✅ 大部分地方可刷卡</li>
-<li>✅ 換一些現金備用（小店、街邊攤）</li>
-<li>✅ 建議換 HKD 2,000-3,000 左右</li>
 </ul>
 </div>
 </div>
