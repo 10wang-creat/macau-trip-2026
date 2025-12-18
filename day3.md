@@ -119,37 +119,11 @@ permalink: /day3
 <ul>
 <li>📍 官也街伴手禮店</li>
 <li>⏱️ 預計 30 分鐘-1 小時完成</li>
-<li>📦 參考伴手禮購物指南</li>
 </ul>
 </div>
 
-<div class="info-card">
-<p><strong>🎁 伴手禮推薦：</strong></p>
-
-<p><strong>晃記餅家 ⭐⭐⭐⭐⭐</strong></p>
-<ul>
-<li>杏仁餅、鳳凰卷、蛋卷</li>
-<li>MOP 50-150/盒</li>
-</ul>
-
-<p><strong>鉅記餅家 ⭐⭐⭐⭐⭐</strong></p>
-<ul>
-<li>豬肉乾（原味、蜜汁、辣味）</li>
-<li>MOP 60-100/包</li>
-</ul>
-
-<p><strong>咀香園</strong>（百年老店）</p>
-<ul>
-<li>杏仁餅、蛋卷</li>
-</ul>
-
-<p><strong>💡 購物小貼士：</strong></p>
-<ul>
-<li>✅ 試吃後再買</li>
-<li>✅ 要求真空包裝</li>
-<li>✅ 先比價再決定</li>
-<li>✅ 預算 MOP 500-1000 可以買很多</li>
-</ul>
+<div class="map-container">
+<img src="{{ '/assets/images/souvenirs-guide.png' | relative_url }}" alt="澳門伴手禮購物指南">
 </div>
 
 <h3>🚌 18:00 取行李、前往機場</h3>
