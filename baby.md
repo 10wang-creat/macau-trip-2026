@@ -10,7 +10,6 @@ permalink: /baby
 <div class="highlight-box">
 <h3>🎂 寶寶資訊</h3>
 <ul>
-<li><strong>生日：</strong>2025年1月12日</li>
 <li><strong>年齡：</strong>旅行時約 1 歲（周歲慶生！）</li>
 <li><strong>特殊需求：</strong>嬰兒床、兒童椅、白粥、午睡時間</li>
 </ul>
