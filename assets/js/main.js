@@ -1,15 +1,19 @@
-// 平滑滾動
+// 平滑滾動 - 只處理頁內錨點連結（#開頭但不是完整URL）
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
+    const href = anchor.getAttribute('href');
+    // 確保只處理純錨點連結，不影響導航欄
+    if (href && href.length > 1 && !anchor.classList.contains('nav-tab')) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
 });
 
 // 導航列固定效果
@@ -51,13 +55,23 @@ if (navTabs && navContainer) {
     navTabs.addEventListener('scroll', checkScrollEnd);
     window.addEventListener('resize', checkScrollEnd);
     
-    // 頁面載入時，自動滑動到當前 active 的分頁
+    // 頁面載入時，自動滑動到當前 active 的分頁（不干擾點擊行為）
     const activeTab = navTabs.querySelector('.nav-tab.active');
     if (activeTab) {
-        setTimeout(() => {
-            activeTab.scrollIntoView({ behavior: 'auto', inline: 'center', block: 'nearest' });
-            setTimeout(checkScrollEnd, 100);
-        }, 50);
+        // 使用 requestAnimationFrame 確保 DOM 完全載入後再執行
+        requestAnimationFrame(() => {
+            // 計算需要滑動的位置，讓 active tab 置中
+            const tabRect = activeTab.getBoundingClientRect();
+            const containerRect = navTabs.getBoundingClientRect();
+            const scrollTarget = activeTab.offsetLeft - (containerRect.width / 2) + (tabRect.width / 2);
+            
+            navTabs.scrollTo({
+                left: Math.max(0, scrollTarget),
+                behavior: 'auto'
+            });
+            
+            setTimeout(checkScrollEnd, 50);
+        });
     } else {
         checkScrollEnd();
     }
