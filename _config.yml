@@ -1,0 +1,21 @@
+title: 澳門三天兩夜家庭旅遊
+description: 2026年1月10-12日家庭旅行完整規劃
+baseurl: "/macau-trip-2026"
+url: "https://10wang-creat.github.io"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - backup-old-version
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
