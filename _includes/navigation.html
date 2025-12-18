@@ -1,9 +1,6 @@
 <nav class="main-nav">
     <div class="container">
         <div class="nav-tabs">
-            <a href="{{ '/' | relative_url }}" class="nav-tab tab-overview {% if page.url == '/' %}active{% endif %}">
-                📋 行程總覽
-            </a>
             <a href="{{ '/practical' | relative_url }}" class="nav-tab tab-practical {% if page.url contains 'practical' %}active{% endif %}">
                 💡 實用資訊
             </a>
@@ -12,6 +9,9 @@
             </a>
             <a href="{{ '/restaurants' | relative_url }}" class="nav-tab tab-restaurants {% if page.url contains 'restaurants' %}active{% endif %}">
                 🍽️ 餐廳指南
+            </a>
+            <a href="{{ '/' | relative_url }}" class="nav-tab tab-overview {% if page.url == '/' %}active{% endif %}">
+                📋 行程總覽
             </a>
             <a href="{{ '/day1' | relative_url }}" class="nav-tab tab-day1 {% if page.url contains 'day1' %}active{% endif %}">
                 🎂 Day1 慶生

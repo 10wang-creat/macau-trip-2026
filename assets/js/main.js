@@ -50,7 +50,17 @@ if (navTabs && navContainer) {
     
     navTabs.addEventListener('scroll', checkScrollEnd);
     window.addEventListener('resize', checkScrollEnd);
-    checkScrollEnd(); // 初始檢查
+    
+    // 頁面載入時，自動滑動到當前 active 的分頁
+    const activeTab = navTabs.querySelector('.nav-tab.active');
+    if (activeTab) {
+        setTimeout(() => {
+            activeTab.scrollIntoView({ behavior: 'auto', inline: 'center', block: 'nearest' });
+            setTimeout(checkScrollEnd, 100);
+        }, 50);
+    } else {
+        checkScrollEnd();
+    }
 }
 
 // 載入完成提示
