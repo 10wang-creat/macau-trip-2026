@@ -120,11 +120,7 @@ title: 行程總覽
 
 <table>
 <tr><th>項目</th><th>預算（MOP）</th><th>預算（TWD）</th></tr>
-<tr><td>機票</td><td>已付</td><td>已付</td></tr>
-<tr><td>住宿</td><td>已付</td><td>已付</td></tr>
-<tr><td>水舞間門票（2張）</td><td>已付</td><td>已付</td></tr>
 <tr><td>餐飲（7人 × 9餐）</td><td>2,625-3,675</td><td>10,500-14,700</td></tr>
-<tr><td>交通</td><td>0</td><td>0（免費接駁）</td></tr>
 <tr><td>伴手禮</td><td>500-1,000/人</td><td>2,000-4,000/人</td></tr>
 </table>
 </div>
