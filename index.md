@@ -106,16 +106,6 @@ title: 行程總覽
 </div>
 
 <div class="content-section">
-<h2>🗺️ 澳門地圖導覽</h2>
-
-<div class="map-container">
-<img src="{{ '/assets/images/macau-map.png' | relative_url }}" alt="澳門景點地圖">
-</div>
-
-<a href="{{ '/assets/maps/macau-interactive-map.html' | relative_url }}" class="map-link" target="_blank">🗺️ 開啟互動式地圖（可點擊導航）</a>
-</div>
-
-<div class="content-section">
 <h2>💰 預算總覽</h2>
 
 <table>
