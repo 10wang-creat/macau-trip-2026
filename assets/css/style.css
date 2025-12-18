@@ -87,10 +87,51 @@ body {
     z-index: 100;
 }
 
+.main-nav .container {
+    position: relative;
+}
+
 .nav-tabs {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.nav-tabs::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* 右側漸層提示 - 表示還有更多 */
+.main-nav .container::after {
+    content: "→";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background: linear-gradient(to left, white 30%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2rem;
+    pointer-events: none;
+    animation: pulse-arrow 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-arrow {
+    0%, 100% { opacity: 0.6; transform: translateX(0); }
+    50% { opacity: 1; transform: translateX(3px); }
+}
+
+/* 當滑到最右邊時隱藏箭頭 */
+.main-nav .container.scroll-end::after {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .nav-tab {
@@ -441,5 +482,12 @@ table tr:nth-child(even) {
     table th,
     table td {
         padding: 10px 8px;
+    }
+}
+
+/* 桌面版隱藏滑動提示 */
+@media (min-width: 900px) {
+    .main-nav .container::after {
+        display: none;
     }
 }
