@@ -309,15 +309,19 @@ main {
     text-align: center;
 }
 
+.content-section .day-header h2,
 .day-header h2 {
-    color: white;
-    border: none;
+    color: white !important;
+    border: none !important;
+    border-bottom: none !important;
     margin: 0;
     padding: 0;
+    padding-bottom: 0 !important;
 }
 
+.content-section .day-header p,
 .day-header p {
-    color: white;
+    color: white !important;
     opacity: 0.9;
     margin-top: 8px;
     margin-bottom: 0;
