@@ -40,6 +40,8 @@ permalink: /restaurants
 <p>👶 <strong>寶寶：</strong>有兒童椅、白粥</p>
 <p>📍 <strong>地點：</strong>氹仔舊城區（酒店步行 5 分鐘）</p>
 <p><strong>特色：</strong>大利來現烤超香，新鴻發 24 小時營業</p>
+
+<p><a href="https://maps.google.com/?q=大利來記豬扒包+氹仔" class="map-link" target="_blank">🗺️ Google Maps 導航（大利來）</a></p>
 </div>
 
 <h3>🦀 晚餐 19:00：誠昌飯店</h3>
@@ -47,7 +49,7 @@ permalink: /restaurants
 <div class="meal-section">
 <p><strong>誠昌飯店</strong></p>
 <ul>
-<li>📍 地址：氹仔官也街</li>
+<li>📍 地址：氹仔舊城區官也街28-30號</li>
 <li>⭐ 水蟹粥超級有名，在地人也愛吃！</li>
 </ul>
 
@@ -61,6 +63,8 @@ permalink: /restaurants
 
 <p>💰 <strong>預算：MOP 420-560（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有座位、白粥</p>
+
+<p><a href="https://maps.google.com/?q=誠昌飯店+氹仔官也街" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 </div>
 
@@ -86,6 +90,8 @@ permalink: /restaurants
 
 <p>💰 <strong>預算：MOP 320-450（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有白粥</p>
+
+<p><a href="https://maps.google.com/?q=陳光記飯店+氹仔" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🍜 午餐 12:00：黃枝記粥麵</h3>
@@ -131,6 +137,8 @@ permalink: /restaurants
 
 <p>💰 <strong>預算：MOP 280-420（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有白粥</p>
+
+<p><a href="https://maps.google.com/?q=勝利茶餐室+氹仔" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 </div>
 
@@ -142,7 +150,7 @@ permalink: /restaurants
 <div class="meal-section">
 <p><strong>澳門茶餐廳</strong></p>
 <ul>
-<li>📍 地址：氹仔</li>
+<li>📍 地址：氹仔舊城區告利雅施利華街60號</li>
 <li>⭐ 早餐選擇多，公仔麵配火腿蛋很港式</li>
 </ul>
 
@@ -156,6 +164,8 @@ permalink: /restaurants
 
 <p>💰 <strong>預算：MOP 350-490（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有白粥</p>
+
+<p><a href="https://maps.google.com/?q=旺記咖啡+氹仔告利雅施利華街" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🍗 午餐 11:00：小飛象葡國餐</h3>
@@ -163,7 +173,7 @@ permalink: /restaurants
 <div class="meal-section">
 <p><strong>小飛象葡國餐</strong></p>
 <ul>
-<li>📍 地址：氹仔</li>
+<li>📍 地址：氹仔地堡街喜來登廣場地下A鋪</li>
 <li>⭐ 道地葡國菜，最後一餐吃好一點！</li>
 </ul>
 
@@ -179,6 +189,8 @@ permalink: /restaurants
 <p>💰 <strong>預算：MOP 560-840（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有兒童椅</p>
 <p><strong>特色：</strong>葡國雞香濃美味，非洲雞微辣好吃</p>
+
+<p><a href="https://maps.google.com/?q=小飛象葡國餐+氹仔地堡街" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 </div>
 

@@ -30,6 +30,8 @@ permalink: /day3
 
 <p>💰 <strong>預算：MOP 350-490（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有白粥</p>
+
+<p><a href="https://maps.google.com/?q=旺記咖啡+氹仔告利雅施利華街" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🏨 10:00 Check-out & 寄放行李</h3>
@@ -75,6 +77,8 @@ permalink: /day3
 
 <p>💰 <strong>預算：MOP 560-840（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有兒童椅</p>
+
+<p><a href="https://maps.google.com/?q=小飛象葡國餐+氹仔地堡街" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🍦 12:00 莫義記榴槤雪糕</h3>

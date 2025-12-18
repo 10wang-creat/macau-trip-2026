@@ -54,6 +54,8 @@ permalink: /day1
 
 <p>💰 <strong>預算：MOP 350-420（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有兒童椅、白粥</p>
+
+<p><a href="https://maps.google.com/?q=大利來記豬扒包+氹仔" class="map-link" target="_blank">🗺️ Google Maps 導航（大利來）</a></p>
 </div>
 
 <h3>⏰ 13:30-15:00 彈性時段</h3>
@@ -109,7 +111,7 @@ permalink: /day1
 <div class="meal-section">
 <p><strong>誠昌飯店</strong></p>
 <ul>
-<li>📍 地址：氹仔官也街</li>
+<li>📍 地址：氹仔舊城區官也街28-30號</li>
 <li>⭐ 水蟹粥超級有名，在地人也愛吃！</li>
 </ul>
 
@@ -123,6 +125,8 @@ permalink: /day1
 
 <p>💰 <strong>預算：MOP 420-560（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有座位、白粥</p>
+
+<p><a href="https://maps.google.com/?q=誠昌飯店+氹仔官也街" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🎂 20:30 三壽星慶生派對</h3>

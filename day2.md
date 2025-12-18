@@ -30,6 +30,8 @@ permalink: /day2
 
 <p>💰 <strong>預算：MOP 320-450（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有白粥</p>
+
+<p><a href="https://maps.google.com/?q=陳光記飯店+氹仔" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🚌 09:00 穿梭巴士到澳門半島</h3>
@@ -183,6 +185,8 @@ permalink: /day2
 
 <p>💰 <strong>預算：MOP 280-420（7人）</strong></p>
 <p>👶 <strong>寶寶：</strong>有白粥</p>
+
+<p><a href="https://maps.google.com/?q=勝利茶餐室+氹仔" class="map-link" target="_blank">🗺️ Google Maps 導航</a></p>
 </div>
 
 <h3>🏨 20:00 回酒店休息</h3>
