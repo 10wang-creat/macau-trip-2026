@@ -7,7 +7,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #333;
     background: #f5f5f5;
 }
@@ -126,8 +126,10 @@ body {
 
 /* 主要內容 */
 main {
-    padding: 40px 0;
+    padding: 40px 20px;
     min-height: 60vh;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .content-section {
@@ -150,21 +152,172 @@ main {
     margin: 25px 0 15px;
 }
 
+.content-section h4 {
+    color: #667eea;
+    margin: 20px 0 12px;
+}
+
+/* 清單樣式 - 重要！ */
+.content-section ul,
+.info-card ul,
+.highlight-box ul,
+.location-item ul,
+.meal-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 12px 0;
+}
+
+.content-section li,
+.info-card li,
+.highlight-box li,
+.location-item li,
+.meal-section li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.content-section li::before,
+.info-card li::before,
+.highlight-box li::before,
+.location-item li::before,
+.meal-section li::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 16px;
+    width: 6px;
+    height: 6px;
+    background: #667eea;
+    border-radius: 50%;
+}
+
+/* 巢狀清單 */
+.content-section ul ul,
+.info-card ul ul {
+    margin: 8px 0 8px 20px;
+}
+
+.content-section ul ul li::before,
+.info-card ul ul li::before {
+    background: #999;
+    width: 5px;
+    height: 5px;
+}
+
 /* 卡片樣式 */
 .info-card {
     background: #f8f9fa;
-    padding: 20px;
+    padding: 20px 25px;
     border-radius: 8px;
     margin: 15px 0;
     border-left: 4px solid #667eea;
 }
 
+.info-card p {
+    margin: 10px 0;
+}
+
+/* 重點提示框 */
 .highlight-box {
-    background: #fff3cd;
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
     border-left: 4px solid #ffc107;
-    padding: 15px;
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.highlight-box strong {
+    color: #856404;
+}
+
+/* 時間軸樣式 */
+.timeline-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 25px;
     margin: 15px 0;
-    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 4px solid #667eea;
+}
+
+.timeline-item.meal {
+    border-left-color: #e74c3c;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e9 100%);
+}
+
+.timeline-item.birthday {
+    border-left-color: #f39c12;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.timeline-item h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.timeline-item p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* 地點卡片 */
+.location-item {
+    background: #f8f9fa;
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.location-item h3,
+.location-item h4 {
+    color: #667eea;
+    margin-bottom: 12px;
+}
+
+.location-item p {
+    margin: 10px 0;
+}
+
+/* 餐廳區塊 */
+.meal-section {
+    background: linear-gradient(135deg, #fff5f7 0%, #ffe5e9 100%);
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid #e74c3c;
+}
+
+.meal-section h4 {
+    color: #c0392b;
+    margin-bottom: 12px;
+}
+
+.meal-section p {
+    margin: 10px 0;
+}
+
+/* Day Header */
+.day-header {
+    color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.day-header h2 {
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.day-header .subtitle {
+    opacity: 0.9;
+    margin-top: 8px;
 }
 
 /* 表格樣式 */
@@ -172,22 +325,56 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    font-size: 0.95rem;
 }
 
 table th {
     background: #667eea;
     color: white;
-    padding: 12px;
+    padding: 12px 15px;
     text-align: left;
 }
 
 table td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 table tr:hover {
     background: #f8f9fa;
+}
+
+table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* 地圖容器 */
+.map-container {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-link {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 15px 0;
+    transition: background 0.3s;
+}
+
+.map-link:hover {
+    background: #5a6fd6;
 }
 
 /* Footer */
@@ -222,11 +409,30 @@ table tr:hover {
     }
     
     .nav-tab {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         padding: 12px 8px;
+        min-width: 100px;
     }
     
-    .content-section {
+    main {
         padding: 20px 15px;
+    }
+    
+    .content-section,
+    .info-card,
+    .highlight-box,
+    .timeline-item,
+    .location-item,
+    .meal-section {
+        padding: 15px 18px;
+    }
+    
+    table {
+        font-size: 0.85rem;
+    }
+    
+    table th,
+    table td {
+        padding: 10px 8px;
     }
 }
