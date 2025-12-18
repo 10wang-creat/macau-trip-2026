@@ -187,6 +187,65 @@ permalink: /practical
 </div>
 </div>
 
+<div class="content-section">
+<h2>🏥 醫院與診所</h2>
+
+<div class="highlight-box">
+<h3>📍 氹仔區（住宿附近）</h3>
+
+<p><strong>科大醫院（離巴黎人最近！）</strong></p>
+<ul>
+<li>📍 氹仔偉龍馬路澳門科技大學 H 座</li>
+<li>📞 電話：+853 2882 1838</li>
+<li>🕐 急診：24 小時</li>
+<li>🚗 距巴黎人約 5 分鐘車程</li>
+<li><a href="https://maps.google.com/?q=科大醫院+澳門" class="map-link" target="_blank">🗺️ Google Maps 導航</a></li>
+</ul>
+
+<p><strong>仁伯爵綜合醫院（山頂醫院）- 公立</strong></p>
+<ul>
+<li>📍 澳門若憲馬路</li>
+<li>📞 電話：+853 2831 3731</li>
+<li>🕐 急診：24 小時</li>
+<li>💡 澳門最大公立醫院</li>
+<li><a href="https://maps.google.com/?q=仁伯爵綜合醫院+澳門" class="map-link" target="_blank">🗺️ Google Maps 導航</a></li>
+</ul>
+</div>
+
+<div class="info-card">
+<h3>📍 澳門半島（Day 2 行程附近）</h3>
+
+<p><strong>鏡湖醫院 - 私立</strong></p>
+<ul>
+<li>📍 澳門連勝馬路</li>
+<li>📞 電話：+853 2837 1333</li>
+<li>🕐 急診：24 小時</li>
+<li>💡 歷史悠久的私立醫院</li>
+<li><a href="https://maps.google.com/?q=鏡湖醫院+澳門" class="map-link" target="_blank">🗺️ Google Maps 導航</a></li>
+</ul>
+</div>
+
+<div class="info-card">
+<h3>👶 寶寶生病怎麼辦？</h3>
+<ul>
+<li>🏨 <strong>優先找酒店禮賓部</strong>：可協助叫車、推薦診所</li>
+<li>🚑 <strong>緊急情況打 999</strong>：會派救護車</li>
+<li>💊 <strong>輕微症狀</strong>：可到藥房買成藥（藥房很多）</li>
+<li>📋 <strong>記得帶</strong>：健保卡影本、寶寶常用藥</li>
+</ul>
+</div>
+
+<div class="info-card">
+<h3>💰 就醫費用提醒</h3>
+<ul>
+<li>⚠️ 台灣健保在澳門<strong>不能直接使用</strong></li>
+<li>💵 需先自費，回台再申請核退</li>
+<li>📄 記得保留：診斷證明、收據正本、費用明細</li>
+<li>💡 建議出發前購買旅遊平安險</li>
+</ul>
+</div>
+</div>
+
 <div class="highlight-box">
 <p><strong>💡 實用資訊小提醒：</strong></p>
 <ul>
