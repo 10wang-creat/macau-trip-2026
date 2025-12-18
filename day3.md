@@ -16,7 +16,7 @@ permalink: /day3
 <div class="meal-section">
 <p><strong>澳門茶餐廳</strong></p>
 <ul>
-<li>📍 地址：氹仔</li>
+<li>📍 地址：氹仔舊城區告利雅施利華街60號</li>
 <li>⭐ 早餐選擇多，公仔麵配火腿蛋很港式</li>
 </ul>
 
@@ -60,7 +60,7 @@ permalink: /day3
 <div class="meal-section">
 <p><strong>小飛象葡國餐</strong></p>
 <ul>
-<li>📍 地址：氹仔</li>
+<li>📍 地址：氹仔地堡街喜來登廣場地下A鋪</li>
 <li>⭐ 道地葡國菜，最後一餐吃好一點！</li>
 </ul>
 
