@@ -68,6 +68,13 @@ permalink: /day2
 <li>📸 必拍照</li>
 </ul>
 
+<p><strong>10:20 戀愛巷</strong>（10 分鐘）</p>
+<ul>
+<li>💕 超浪漫粉色小巷</li>
+<li>📍 大三巴牌坊旁邊，步行 1 分鐘</li>
+<li>📸 拍照打卡熱點！</li>
+</ul>
+
 <p><strong>10:30 大炮台</strong>（選擇性）</p>
 <ul>
 <li>🏰 可眺望全景</li>
