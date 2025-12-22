@@ -79,7 +79,8 @@ title: 行程總覽
 <div class="timeline-item">
 <p><strong>08:00</strong> ☕ 早餐：陳光記飯店</p>
 <p><strong>09:00</strong> 🚌 穿梭巴士到澳門半島</p>
-<p><strong>09:30-11:30</strong> 🏛️ 歷史城區（議事亭→玫瑰堂→大三巴→戀愛巷）</p>
+<p><strong>09:30</strong> 👗 旗袍租借體驗（旗緣旗袍店）</p>
+<p><strong>10:30-12:00</strong> 🏛️ 歷史城區（議事亭→玫瑰堂→大三巴→戀愛巷）</p>
 <p><strong>12:00</strong> 🍜 午餐：黃枝記粥麵（竹昇麵必吃！）</p>
 </div>
 
