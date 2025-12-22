@@ -56,44 +56,6 @@ permalink: /practical
 </div>
 
 <div class="content-section">
-<h2>🛂 入境澳門（不需台胞證！）</h2>
-
-<div class="highlight-box">
-<h3>✅ 超簡單！只需要護照！</h3>
-
-<p><strong>需要準備：</strong></p>
-<ul>
-<li>📕 台灣護照（效期 6 個月以上）</li>
-<li>✈️ 回程機票</li>
-</ul>
-
-<p><strong>不需要：</strong></p>
-<ul>
-<li>❌ <strong>台胞證</strong>（那是去中國大陸才需要）</li>
-<li>❌ 簽證</li>
-<li>❌ 其他文件</li>
-</ul>
-
-<p><strong>停留天數：</strong></p>
-<ul>
-<li>📅 免簽最多 30 天</li>
-<li>✅ 我們只待 3 天，完全沒問題！</li>
-</ul>
-
-<p><strong>入境流程：</strong></p>
-<ul>
-<li>1. 填寫入境卡（飛機上發）</li>
-<li>2. 排隊過海關</li>
-<li>3. 蓋章入境</li>
-<li>4. 領行李</li>
-<li>5. 完成！</li>
-</ul>
-
-<p>💡 <strong>拿護照就能去，超方便！</strong></p>
-</div>
-</div>
-
-<div class="content-section">
 <h2>🗺️ 澳門地圖導覽</h2>
 
 <div class="map-container">
@@ -215,7 +177,6 @@ permalink: /practical
 <div class="highlight-box">
 <p><strong>💡 實用資訊小提醒：</strong></p>
 <ul>
-<li>✅ 只需護照，不需台胞證！</li>
 <li>✅ 善用免費接駁車</li>
 <li>✅ 港幣澳門幣通用</li>
 <li>✅ 記得帶轉接頭</li>
